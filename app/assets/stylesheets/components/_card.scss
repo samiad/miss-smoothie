@@ -1,0 +1,22 @@
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 1px 1px 10px lightgrey;
+}
+
+.card-img {
+  height: 50px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-name {
+  color: #616668;
+  text-decoration: none;
+}

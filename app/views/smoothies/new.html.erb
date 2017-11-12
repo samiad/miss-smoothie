@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="form-smoothie">
+    <%= simple_form_for @smoothie do |f| %>
+      <%= f.input :name, placeholder: "Nom du Smoothie", label: false %>
+      <%= f.input :picture, as: :attachinary, label: "Photo du Smoothie" %>
+      <%= f.submit 'Ajouter', class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>

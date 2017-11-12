@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="text-center">Les Smoothies</div>
+    <div class="row">
+      <% @smoothies.each do |smoothie| %>
+        <% if smoothie.picture? %>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="card">
+              <div class="card-img text-center"><%= cl_image_tag smoothie.picture.path, width: 220, height: 200, crop: :fill %></div>
+              <div class="card-name text-center"><%= link_to smoothie.name, smoothie_path(smoothie) %></div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+</div>

@@ -1,7 +1,77 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# require 'json'
+# require 'open-uri'
+
+# url = 'http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
+# ingredients_list = open(url).read
+# ingredients = JSON.parse(ingredients_list)['drinks']
+
+# ingredients.each do |ingredient|
+#   ingredient_name = ingredient['strIngredient1']
+#   Ingredient.create(name: ingredient_name)
+# end
+Cocktail.destroy_all
+Ingredient.destroy_all
+
+Ingredient.create(name: "Abricot")
+Ingredient.create(name: "Amande")
+Ingredient.create(name: "Ananas")
+Ingredient.create(name: "Avocat")
+Ingredient.create(name: "Baie de Goji")
+Ingredient.create(name: "Banane")
+Ingredient.create(name: "Basilic")
+Ingredient.create(name: "Canelle")
+Ingredient.create(name: "Cassis")
+Ingredient.create(name: "Cerise")
+Ingredient.create(name: "Châtaigne")
+Ingredient.create(name: "Citron")
+Ingredient.create(name: "Clémentine")
+Ingredient.create(name: "Coing")
+Ingredient.create(name: "Concombre")
+Ingredient.create(name: "Datte")
+Ingredient.create(name: "Eau plate")
+Ingredient.create(name: "Eau pétillante")
+Ingredient.create(name: "Figue fraîche")
+Ingredient.create(name: "Fraise")
+Ingredient.create(name: "Fraise des bois")
+Ingredient.create(name: "Framboise")
+Ingredient.create(name: "Fruit de la passion")
+Ingredient.create(name: "Epinard")
+Ingredient.create(name: "Gingembre")
+Ingredient.create(name: "Glace pilée")
+Ingredient.create(name: "Grenade")
+Ingredient.create(name: "Groseille")
+Ingredient.create(name: "Groseille à maquereau")
+Ingredient.create(name: "Kaki")
+Ingredient.create(name: "Kiwi")
+Ingredient.create(name: "Kumquat")
+Ingredient.create(name: "Litchi")
+Ingredient.create(name: "Mandarine")
+Ingredient.create(name: "Mangue")
+Ingredient.create(name: "Marron")
+Ingredient.create(name: "Melon")
+Ingredient.create(name: "Menthe")
+Ingredient.create(name: "Mirabelle")
+Ingredient.create(name: "Mûre")
+Ingredient.create(name: "Myrtille")
+Ingredient.create(name: "Nectarine")
+Ingredient.create(name: "Noisette")
+Ingredient.create(name: "Noix")
+Ingredient.create(name: "Orange")
+Ingredient.create(name: "Orange sanguine")
+Ingredient.create(name: "Pamplemousse")
+Ingredient.create(name: "Papaye")
+Ingredient.create(name: "Pastèque")
+Ingredient.create(name: "Persil")
+Ingredient.create(name: "Pêche")
+Ingredient.create(name: "Poire")
+Ingredient.create(name: "Pomme")
+Ingredient.create(name: "Prune")
+Ingredient.create(name: "Quetsche")
+Ingredient.create(name: "Raisin")
+Ingredient.create(name: "Reine-claude")
+Ingredient.create(name: "Sucre")
+Ingredient.create(name: "Sucre roux")
+Ingredient.create(name: "Tomate")
+Ingredient.create(name: "Tomate charnue")
+Ingredient.create(name: "Tomate Peretti")
+

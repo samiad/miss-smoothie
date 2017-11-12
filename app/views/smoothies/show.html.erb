@@ -1,0 +1,21 @@
+<div class="container">
+  <% content_for :name do %>
+  <%= @smoothie.name %>
+  <% end %>
+  <h2><%= @smoothie.name %></h2>
+   <%= cl_image_tag @smoothie.picture.path, width: 200, height: 300, crop: :fill %>
+
+  <p>Recette</p>
+  <ul>
+    <% @smoothie.doses.each do |dose| %>
+      <% if dose.persisted? %>
+        <li>
+          <%= dose.description %> of <%= dose.ingredient.name %>
+          <%= link_to "x", dose_path(dose), method: :delete %>
+        </li>
+      <% end %>
+     <% end %>
+  </ul>
+  <p>Ajoutes un ingredient</p>
+  <%= render 'doses/form' %>
+</div>
