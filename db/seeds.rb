@@ -74,4 +74,3 @@ Ingredient.create(name: "Sucre roux")
 Ingredient.create(name: "Tomate")
 Ingredient.create(name: "Tomate charnue")
 Ingredient.create(name: "Tomate Peretti")
-
