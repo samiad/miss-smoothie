@@ -17,7 +17,7 @@ class SmoothiesController < ApplicationController
   def create
     @smoothie = Smoothie.new(smoothie_params)
     if @smoothie.save
-      redirect_to smoothie_path(@smoothie)
+      redirect_to smoothy_path(@smoothie)
     else
       render :new
     end

@@ -9,7 +9,7 @@
 
     <!-- Links -->
     <%= link_to "Les Smoothies", root_path, class: "navbar-smoothie-item navbar-smoothie-link" %>
-    <%= link_to "Ajouter mon Smoothie", new_smoothie_path(@smoothie), class: "navbar-smoothie-item navbar-smoothie-link" %>
+    <%= link_to "Ajouter mon Smoothie", new_smoothy_path(@smoothie), class: "navbar-smoothie-item navbar-smoothie-link" %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
@@ -18,7 +18,7 @@
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-smoothie-dropdown-menu">
         <%= link_to "Les Smoothies", root_path %>
-        <%= link_to "Ajouter mon Smoothie", new_smoothie_path(@smoothie) %>
+        <%= link_to "Ajouter mon Smoothie", new_smoothy_path(@smoothie) %>
       </ul>
     </div>
   </div>

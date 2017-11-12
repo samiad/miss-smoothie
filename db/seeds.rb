@@ -9,7 +9,7 @@
 #   ingredient_name = ingredient['strIngredient1']
 #   Ingredient.create(name: ingredient_name)
 # end
-Cocktail.destroy_all
+Smoothie.destroy_all
 Ingredient.destroy_all
 
 Ingredient.create(name: "Abricot")

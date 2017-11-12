@@ -1,12 +1,12 @@
 class DosesController < ApplicationController
-  before_action :set_dose, only: [:destroy]
-  before_action :set_smoothie, only: [:create]
+  before_action :set_dose, only: :destroy
+  before_action :set_smoothie, only: :create
 
   def create
     @dose = Dose.new(dose_params)
     @dose.smoothie = @smoothie
     if @dose.save
-      redirect_to smoothie_path(@dose.smoothie)
+      redirect_to smoothy_path(@dose.smoothie)
     else
       render "smoothies/show"
     end
@@ -15,7 +15,7 @@ class DosesController < ApplicationController
   def destroy
     @dose.destroy
     # no need for app/views/doses/destroy.html.erb
-    redirect_to smoothie_path(@dose.smoothie)
+    redirect_to smoothy_path(@dose.smoothie)
   end
 
   private
